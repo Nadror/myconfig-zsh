@@ -5,7 +5,7 @@ echo -e "Check if we have zsh, git and wget ...\n"
     if [ -d /usr/bin/wget ] && [ -d /usr/bin/git ] && [ -d /usr/bin/zsh ]; then
         echo -e "zsh wget and git are already installed\n"
     else
-        echo -e "You need to install at your own : 'sudo apt install -y zsh git wget'"
+        echo -e "You need to install at your own : 'sudo apt install -y zsh git wget'" && exit
     fi
 
 ###Install oh-my-zsh####
