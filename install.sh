@@ -13,8 +13,6 @@ echo -e "Installing oh-my-zsh...\n"
     if [ -d ~/.oh-my-zsh ]; then
         echo -e "oh-my-zsh is already installed, please remove --> /home/$USER/.oh-my-zsh" && exit
     else
-        
-        cd /tmp
         sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
     fi
 
@@ -32,20 +30,10 @@ echo -e "Install my config ZSH...\n"
     if [ -d ~/.zshrc ]; then
         mv -n ~/.zshrc ~/.zshrc-backup-$(date +"%Y-%m-%d")# Backup .zshrc
         echo -e "File already existed .zshrc to .zshrc-'date' backup created.\n"
-    elif [ -d /tmp/myconfig-zsh ]; then
-        cd /tmp/myconfig-zsh
-        mkdir -p ~/.oh-my-zsh/custom/themes/
-        cp -f /tmp/myconfig-zsh/config/nadror.zsh-theme ~/.oh-my-zsh/custom/themes/nadror.zsh-theme
-        cp -f /tmp/myconfig-zsh/config/.zshrc ~/.zshrc
-        source ~/.zshrc # Refresh the profile zsh shell
-        echo -e "Config installed\n"
-        zsh
     else
-        git clone --depth 1 https://github.com/Nadror/myconfig-zsh.git
-        cd /tmp/myconfig-zsh
         mkdir -p ~/.oh-my-zsh/custom/themes/
-        cp -f /tmp/myconfig-zsh/config/nadror.zsh-theme ~/.oh-my-zsh/custom/themes/
-        cp -f /tmp/myconfig-zsh/config/.zshrc ~/
+        cp -f ./config/nadror.zsh-theme ~/.oh-my-zsh/custom/themes/
+        cp -f ./config/.zshrc ~/
         source ~/.zshrc
         echo -e "Config installed\n"
         zsh
