@@ -18,6 +18,6 @@ bash -c "$(curl -fsSL https://raw.githubusercontent.com/Nadror/myconfig-zsh/mast
 # Testing in environment
 Click on this link and run :
 ```bash
-chmod +x && ./install.sh
+chmod +x install.sh && ./install.sh
 ```
 [![Open in Cloud Shell](https://gstatic.com/cloudssh/images/open-btn.svg)](https://shell.cloud.google.com/cloudshell/editor?cloudshell_git_repo=https://github.com/Nadror/myconfig-zsh)
