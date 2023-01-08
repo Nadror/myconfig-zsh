@@ -15,4 +15,9 @@ bash -c "$(curl -fsSL https://raw.githubusercontent.com/Nadror/myconfig-zsh/mast
 ```
 ![image](https://user-images.githubusercontent.com/58830219/211177538-c73490e9-1e17-4294-bd33-589df1ca8719.png)
 
+# Testing in environment
+Click on this link and run :
+```bash
+chmod +x && ./install.sh
+```
 [![Open in Cloud Shell](https://gstatic.com/cloudssh/images/open-btn.svg)](https://shell.cloud.google.com/cloudshell/editor?cloudshell_git_repo=https://github.com/Nadror/myconfig-zsh)
