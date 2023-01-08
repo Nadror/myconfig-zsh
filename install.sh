@@ -32,8 +32,8 @@ echo -e "Install my config ZSH...\n"
         echo -e "File already existed .zshrc to .zshrc-'date' backup created.\n"
     else
         mkdir -p ~/.oh-my-zsh/custom/themes/
-        cp -f ./config/nadror.zsh-theme ~/.oh-my-zsh/custom/themes/
-        cp -f ./config/.zshrc ~/
+        curl -fsSL https://raw.githubusercontent.com/Nadror/myconfig-zsh/master/config/nadror.zsh-theme -o  ~/.oh-my-zsh/custom/themes/nadror.zsh-theme
+        curl -fsSL https://raw.githubusercontent.com/Nadror/myconfig-zsh/master/config/.zshrc  -O ~/.zshrc
         source ~/.zshrc
         echo -e "Config installed\n"
         zsh
