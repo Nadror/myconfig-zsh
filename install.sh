@@ -33,7 +33,7 @@ echo -e "Install my config ZSH...\n"
     else
         mkdir -p ~/.oh-my-zsh/custom/themes/
         curl -fsSL https://raw.githubusercontent.com/Nadror/myconfig-zsh/master/config/nadror.zsh-theme -o  ~/.oh-my-zsh/custom/themes/nadror.zsh-theme
-        curl -fsSL https://raw.githubusercontent.com/Nadror/myconfig-zsh/master/config/.zshrc  -O ~/.zshrc
+        curl -fsSL https://raw.githubusercontent.com/Nadror/myconfig-zsh/master/config/.zshrc  -o ~/.zshrc
         source ~/.zshrc
         echo -e "Config installed\n"
         zsh
